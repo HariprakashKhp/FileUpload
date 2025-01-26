@@ -1,0 +1,2 @@
+1. Add download option of the uploaded file.
+2. Add style to the UI
