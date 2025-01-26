@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML File upload</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <form
+        action="http://localhost:3000/upload"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label for="image">Image</label>
+        <input type="file" name="image" id="image" accept="image/*" />
+        <button class="text-white bg-blue-500">Submit</button>
+      </form>
+      <form
+        action="http://localhost:3000/uploadMultiple"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label for="images">Images</label>
+        <input
+          type="file"
+          name="images"
+          id="images"
+          accept="image/*"
+          multiple
+        />
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
